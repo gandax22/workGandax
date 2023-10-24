@@ -3,7 +3,6 @@ import { useLocalStorage } from "./../../hook/hook"
 import ChatBlock from "./chat-block"
 import Comment from "./comment"
 import {UserContext} from "../../context/user";
-const { user } = useContext(UserContext); 
 const Chat = () => {
   const [chatData, setChatData] = useLocalStorage("CHAT", []);
   const [inputValue, setInputValue] = useState("");
